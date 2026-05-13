@@ -1,3 +1,3 @@
 property_id,status,area,station,walk_min,price_yen,gross_yield,property_type,summary,url,priority,post_after
-TK001,ready,Nakano-ku,Nakano Station,12,49800000,7.20,used-condo,Price updated and walkable from station,https://example.com/1,1,2026-05-12 09:00
-TK002,ready,Suginami-ku,Ogikubo Station,10,43800000,7.50,used-condo,Higher gross yield. Confirm management costs,https://example.com/2,2,2026-05-12 12:00
+TK001,ready,中野区,中野駅,12,49800000,7.20,中古区分,駅徒歩圏・価格改定あり,https://example.com/1,1,2026-05-12 09:00
+TK002,ready,杉並区,荻窪駅,10,43800000,7.50,中古区分,表面利回り高め・要管理費確認,https://example.com/2,2,2026-05-12 12:00
