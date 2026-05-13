@@ -1,0 +1,22 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "x-realestate-autopost",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-05-01",
+  "vars": {
+    "AUTOPOST_ENABLED": "false"
+  },
+  "kv_namespaces": [
+    {
+      "binding": "POSTED_LOG",
+      "id": "REPLACE_WITH_CLOUDFLARE_KV_NAMESPACE_ID"
+    }
+  ],
+  "triggers": {
+    "crons": [
+      "17 0 * * *",
+      "23 3 * * *",
+      "41 6 * * *"
+    ]
+  }
+}
