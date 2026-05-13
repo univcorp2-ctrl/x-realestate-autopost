@@ -8,15 +8,15 @@ def validate_post(text: str) -> list[str]:
     errors: list[str] = []
     stripped = text.strip()
     if not stripped:
-        errors.append("post text is empty")
+        errors.append("投稿文が空です")
     if len(stripped) > MAX_X_CHARS:
-        errors.append(f"post text is too long: {len(stripped)} chars")
+        errors.append(f"投稿文が長すぎます: {len(stripped)}文字")
     if stripped.count("#") > MAX_HASHTAGS:
-        errors.append("too many hashtags")
+        errors.append("ハッシュタグが多すぎます")
     if "@" in stripped:
-        errors.append("mentions are disabled in this MVP")
+        errors.append("MVPではメンション投稿は禁止です")
     lines = [line.strip() for line in stripped.splitlines() if line.strip()]
     non_url_lines = [line for line in lines if not line.startswith(("http://", "https://"))]
     if lines and not non_url_lines:
-        errors.append("URL-only posts are not allowed")
+        errors.append("URLだけの投稿は禁止です")
     return errors
