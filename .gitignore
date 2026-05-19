@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Node / Cloudflare Worker
+node_modules/
+cloudflare-worker/node_modules/
+cloudflare-worker/wrangler.generated.jsonc
+cloudflare-worker/.wrangler/
+.wrangler/
+
+# Environment secrets
+.env
+.env.local
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
