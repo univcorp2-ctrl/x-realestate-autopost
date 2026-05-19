@@ -10,9 +10,9 @@ describe("core", () => {
   it("builds Japanese post text", () => {
     const text = buildPost(PROPERTIES[0]);
     expect(text).toContain("【注目物件メモ】");
-    expect(text).toContain("中野区");
-    expect(text).toContain("中野駅 徒歩12分");
-    expect(text).toContain("4,980万円");
+    expect(text).toContain("板橋区");
+    expect(text).toContain("東武東上線・東武練馬 徒歩10分");
+    expect(text).toContain("9,083万円");
     expect(text).toContain("#不動産投資");
   });
 
@@ -29,7 +29,7 @@ describe("core", () => {
   });
 
   it("picks first ready candidate", () => {
-    const candidate = pickNextCandidate(PROPERTIES, emptyLog(), new Date("2026-05-12T01:00:00.000Z"));
-    expect(candidate?.property_id).toBe("TK001");
+    const candidate = pickNextCandidate(PROPERTIES, emptyLog(), new Date("2026-05-19T01:00:00.000Z"));
+    expect(candidate?.property_id).toBe("ITABASHI-NERIMA-20260519");
   });
 });
